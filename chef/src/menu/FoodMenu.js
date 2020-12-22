@@ -115,7 +115,7 @@ const FoodMenu = () => {
                             <br></br>
                             <br></br>
                             <br></br>
-                        <p>Please Pre-pay @cashapp: <br/><br/>$Chefcreations</p></Col>
+                        <p>Please Pre-pay @cashapp: <br/><br/>$Chefwestcreations</p></Col>
                     </Row>
                 </Col>
             </Row>
