@@ -6,6 +6,10 @@ import image2 from '../images/Black and Yellow Border 2.png'
 import tilapia from '../images/tilapia.jpg'
 import baked from '../images/baked.jpg'
 import honeygarlic from '../images/honeygarlic.jpeg'
+import turkey from '../images/turkey.JPG'
+import porkchops from '../images/porkchops.JPG'
+import bbqwings from '../images/bbqwings.JPG'
+import zest from '../images/lemonzest2.JPG'
 
 
 const entrees = [
@@ -13,13 +17,13 @@ const entrees = [
         title: 'Pork chops in Applewood sauce ',
         description: 'Perfectly cooked porkchops tossed with our homemade applewood sauce',
         price: '$13.00',
-        foodImage: <img src='https://ca-times.brightspotcdn.com/dims4/default/444499c/2147483647/strip/true/crop/3000x2000+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F7d%2F24%2F0d9fed4c40c285ffca41843ae569%2Fdecadefood.jpg' alt='food'></img>
+        foodImage: <Image width={250} src={porkchops}/>
       },
       {
-        title: 'Turkey Balls',
-        description: 'Turkey balls made to perfection',
+        title: 'Turkey Infusion (regular or sweet)',
+        description: 'Ground turkey prepared with our special seasoning and made to perfection',
         price: '$13.00',
-        foodImage: <img src='https://ca-times.brightspotcdn.com/dims4/default/444499c/2147483647/strip/true/crop/3000x2000+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F7d%2F24%2F0d9fed4c40c285ffca41843ae569%2Fdecadefood.jpg' alt='food'></img>
+        foodImage: <Image width={250} src={turkey}/>
       },
       {
         title: 'Tilapia Fish Fried',
@@ -31,7 +35,7 @@ const entrees = [
         title: 'BBQ Wings',
         description: 'Wings tossed with our special bbq sauce',
         price: '$15.00',
-        foodImage: <img src='https://ca-times.brightspotcdn.com/dims4/default/444499c/2147483647/strip/true/crop/3000x2000+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F7d%2F24%2F0d9fed4c40c285ffca41843ae569%2Fdecadefood.jpg' alt='food'></img>
+        foodImage: <Image width={250} src={bbqwings}/>
       },
       {
         title: 'Honey Garlic Wings',
@@ -49,7 +53,7 @@ const entrees = [
         title: 'Lemon Zest Wings',
         description: 'Wings tossed with fresh lemon zest and herbs',
         price: '$15.00',
-        foodImage: <img src='https://ca-times.brightspotcdn.com/dims4/default/444499c/2147483647/strip/true/crop/3000x2000+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F7d%2F24%2F0d9fed4c40c285ffca41843ae569%2Fdecadefood.jpg' alt='food'></img>
+        foodImage: <Image width={250} src={zest}/>
       },
   ];
 
