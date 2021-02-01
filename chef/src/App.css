@@ -87,14 +87,13 @@ table {
   background-color: #222222;
 }
 
-.jumbotron {
+/* .jumbotron {
   width: 100vw;
   height: 225px;
   background: url('./images/Black-and-Yellow-Border\ 5.png');
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
-}
+} */
 
 .menu-container {
   height: 100vh;
@@ -114,12 +113,37 @@ table {
   color: #FAFAFA;
   font-size: 1.5rem;
 }
+
+.jumbotron {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.branding { 
+  height: 250px;
+  width: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.bio {
+  color: white;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 1.3rem;
+}
+
+
 .main-menu {
   padding-left: 10px;;
 }
 
 .menu-header {
-  background: linear-gradient(to bottom, #FAFAFA 50%, #D7A82B 50%);
+  background: linear-gradient(to bottom, #000000 50%, #222222 50%);
   position: absolute;
   top: 21%;
   left: 50%;
@@ -134,29 +158,18 @@ table {
 						20px 20px #000000;
 }
 
-.menu-header1 {
-  background: linear-gradient(to bottom, #FAFAFA 50%, #D7A82B 50%);
-  position: absolute;
-  top: 56%;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-	letter-spacing:0.1em;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: white;
-  text-shadow: 
-						8px 8px gray,
-						20px 20px #000000;
-}
-
 .menu-subheader {
-  background: linear-gradient(to bottom, #FAFAFA 50%, #D7A82B 50%);
+  background: linear-gradient(to bottom, #000000 50%, #222222 50%);
 }
 
 .ant-divider-horizontal.ant-divider-with-text {
   font-size: 2rem;
+  color: #ffffff;
 }
+
+/* #menu-title { 
+  height: 35%;
+} */
 
 .menu-setions {
   height: 75%;
@@ -204,10 +217,12 @@ table {
   }
 }
 
+
+/* media queries */
 @media only screen and (max-width: 1200px) {
 
   .jumbotron {
-    height: 650px;
+    height: 100%;
   }
   .ant-divider-inner-text {
     font-size: 30px;
@@ -391,6 +406,11 @@ table {
 }
 
 .jumbotron {
-  height: 0px;
+  height: 100%;
+}
+
+.jumbotron .branding {
+  height: 50%;
+  width: 50%;
 }
 }

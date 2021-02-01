@@ -71,8 +71,8 @@ const FoodMenu = () => {
             <Jumbo />
             <Row style={{ width: '100vw'}} gutter={[32, 32]} className='menu-container'>
                 <Col span={12} style={{height: '100%'}}>
-                    <Row gutter={[8, 8]} className='menu-setions'>
-                        <Col span={24} style={{height: '100%'}}><h1><div className='menu-header'>ME</div><div className='menu-header1'>NU</div></h1></Col>
+                    <Row gutter={[8, 8]} className='menu-setions' id='menu-title'>
+                        <Col span={24} style={{height: '100%'}}><h1><div className='menu-header'>MENU</div></h1></Col>
                     </Row>
                     <Row gutter={[8, 8]} className='menu-setions'>
                         <Col span={24} style={{height: '100%'}}>
