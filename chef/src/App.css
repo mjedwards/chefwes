@@ -93,7 +93,7 @@ table {
 
 .phone-nav p {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 
@@ -404,6 +404,10 @@ table {
     content: 'Call';
     color: white;
     float: right;
+  }
+
+  .phone-nav {
+    font-size: 1rem;
   }
 
   .menu-container {
