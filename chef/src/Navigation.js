@@ -15,9 +15,9 @@ const Nav = () => {
                 <Menu.Item key="menu">
                     <Link to="/"> See the menu!</Link>
                 </Menu.Item>
-                {/* <Menu.Item key="photos">
-                    <Link to="/photos">See the food!</Link>
-                </Menu.Item> */}
+                <Menu.Item key="cell" className='phone-nav'>
+                    <p>Place an Order: <a href='tel:954-203-1996'>954-203-1996</a></p>
+                </Menu.Item>
             </Menu>
         </div>
     )
