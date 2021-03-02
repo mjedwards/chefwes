@@ -31,55 +31,55 @@ const entrees = [
         title: 'Pork chops in Applewood sauce ',
         description: 'Perfectly cooked porkchops tossed with our homemade applewood sauce',
         price: '$13.00',
-        foodImage: <Image width={500} src={porkchops}/>
+        foodImage: <Image className="new-size"  src={porkchops}/>
       },
       {
         title: 'Turkey Infusion (regular or sweet)',
         description: 'Ground turkey prepared with our special seasoning and made to perfection',
         price: '$13.00',
-        foodImage: <Image width={500} src={turkey}/>
+        foodImage: <Image className="new-size"  src={turkey}/>
       },
       {
         title: 'Tilapia Fish Fried',
         description: 'Tilapia fried to perfection with our best seasoning',
         price: '$11.00',
-        foodImage: <Image width={500} src={tilapia}/>
+        foodImage: <Image className="new-size"  src={tilapia}/>
       },
       {
         title: 'BBQ Wings',
         description: 'Wings tossed with our special bbq sauce',
         price: '$15.00',
-        foodImage: <Image width={500} src={bbqwings}/>
+        foodImage: <Image className="new-size"  src={bbqwings}/>
       },
       {
         title: 'Honey Garlic Wings',
         description: 'Wings tossed with our homemade honey garlic sauce',
         price: '$15.00',
-        foodImage: <Image width={500} src={honeygarlic}/>
+        foodImage: <Image className="new-size"  src={honeygarlic}/>
       },
       {
         title: 'Baked Wings',
         description: 'Flavorful wings baked with seasoning and herbs',
         price: '$15.00',
-        foodImage: <Image width={500} src={baked}/>
+        foodImage: <Image className="new-size"  src={baked}/>
       },
       {
         title: 'Lemon Zest Wings',
         description: 'Wings tossed with fresh lemon zest and herbs',
         price: '$15.00',
-        foodImage: <Image width={500} src={zest}/>
+        foodImage: <Image className="new-size"  src={zest}/>
       },
       {
         title: 'Fried Boneless Chicken',
         description: 'Chicken fried and seasoned to perfection.',
         price: '$15.00',
-        foodImage: <Image width={500} src={boneless}/>
+        foodImage: <Image className="new-size"  src={boneless}/>
       },
       {
         title: 'Fried Shrimp',
         description: 'Shrimp fried and seasoned to perfection.',
         price: '$15.00',
-        foodImage: <Image width={500} src={shrimp}/>
+        foodImage: <Image className="new-size"  src={shrimp}/>
       }
   ];
 
@@ -93,7 +93,7 @@ let menuClass = [
 
 const FoodMenu = () => {
     return (
-        <div className="main-menu">
+        <div className="main-menu" id='menu'>
             <Jumbo />
             <Row style={{ width: '100vw'}} gutter={[32, 32]} className='menu-container'>
                 <Col span={12} style={{height: '100%', maxWidth:'100%'}}>
@@ -108,20 +108,21 @@ const FoodMenu = () => {
                             <br></br>
                             <br></br>
                             <br></br>
-                            <Divider dashed className='new-color'/>
+                           
                             <List
                             className='menu-list'
                             size="small"
                             itemLayout="horizontal"
                             dataSource={entrees}
                             renderItem={item => 
-                                    <List.Item style={{borderBottom: 'none', color:'white'}}>
-                                    <List.Item.Meta
-                                        title={<h3>{item.title}</h3>}
-                                        description={<p className="item-description">{item.foodImage}{item.description}</p>}
+                                    <List.Item style={{borderBottom: 'none', color:'white', marginBottom:'100px'}}>
+                                    <List.Item.Meta    
                                         style={{color:'white'}}
                                     />
-                                {item.price}<Divider dashed className='new-color'/>
+                                {item.foodImage}
+                                {<h3>{item.title}</h3>}
+                                {<p className="item-description">{item.description}</p>}
+                                {item.price}
                             </List.Item>}
                             />
                             <br></br>

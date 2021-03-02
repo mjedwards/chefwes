@@ -87,9 +87,9 @@ table {
   background-color: #222222;
 }
 
-.phone-nav {
+/* .phone-nav {
   float: right;
-}
+} */
 
 .phone-nav p {
   color: #ffffff;
@@ -193,7 +193,7 @@ table {
 }
 .ant-list * {
   color: #FAFAFA;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
 }
 .ant-list-item-meta-content {
   color: #ffffff;
@@ -386,7 +386,7 @@ table {
 
 @media only screen and (max-width: 1000px) {
   .yelp {
-    width: 4%;
+    width: 40px;
   }
 }
 
@@ -399,6 +399,13 @@ table {
 }
 
 @media only screen and (max-width: 600px) {
+
+  #root > div > div:nth-child(1) > ul > li:nth-child(3) > div > span {
+    content: 'Call';
+    color: white;
+    float: right;
+  }
+
   .menu-container {
     display: flex;
     flex-flow: column;
@@ -420,12 +427,26 @@ table {
     left: 50%;
   }
 
+  .new-size {
+    width: 75% !important;
+  }
+
+  #gallery > div > div > div {
+    display: flex !important;
+    flex-flow: row wrap !important;
+  }
+
+  #gallery > div > div > div > div {
+    width: 50% !important;
+    max-width: 50% !important;
+  }
+
   .ant-list-item {
     width: 100vw;
   }
 
   .ant-col-24 h1 {
-    font-size: 9rem;
+    font-size: 6rem;
   }
 
   .ant-divider-horizontal.ant-divider-with-text {
@@ -448,7 +469,7 @@ table {
 
 .hours {
   width: 100vw;
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .ant-divider-inner-text {
